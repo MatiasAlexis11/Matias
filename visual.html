@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo mucho amor</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffcccb; /* Fondo rosa */
+            margin: 0; /* Sin márgenes */
+            height: 100vh; /* Altura completa de la ventana */
+            overflow: hidden; /* Evitar scroll */
+            position: relative; /* Para posicionar la firma */
+        }
+        h1 {
+            font-size: 48px; /* Tamaño de letra grande */
+            color: #000000; /* Color del texto negro */
+            font-style: italic; /* Texto en cursiva */
+            position: relative; /* Para que el texto esté por encima del fondo */
+            z-index: 1; /* Asegura que el texto esté por encima del GIF */
+        }
+        .signature {
+            position: absolute; /* Posicionamiento absoluto */
+            bottom: 20px; /* Distancia desde la parte inferior */
+            right: 20px; /* Distancia desde la parte derecha */
+            font-size: 20px; /* Tamaño de la firma */
+            color: #000000; /* Color de la firma */
+            font-style: italic; /* Texto en cursiva */
+            z-index: 1; /* Asegura que la firma esté por encima del GIF */
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://img1.picmix.com/output/stamp/normal/1/8/4/9/1329481_6cf09.gif'); /* GIF de lluvia de corazones */
+            background-size: contain; /* Mantener la proporción del GIF */
+            background-repeat: no-repeat; /* No repetir el fondo */
+            background-position: center; /* Centrar el fondo */
+            z-index: 0; /* Asegura que el GIF esté detrás del texto */
+        }
+        .gif-container {
+            position: relative; /* Para que el GIF esté por encima del fondo */
+            z-index: 1; /* Asegura que el GIF esté por encima del fondo */
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <h1>Te amo mucho amor</h1>
+    <div class="gif-container">
+        <img src="https://media.tenor.com/urdUXJbRolgAAAAj/peach-goma.gif" alt="Gif de amor">
+    </div>
+    <div class="signature">Att: Matias, tu futuro esposo 💗</div>
+</body>
+</html>
